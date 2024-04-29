@@ -1,0 +1,401 @@
+/* "*" belgisi barcha elementlarga murojaatni anglatadi*/
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+/*bloklarning width ni o`zgarishini verstka uchun qulay qilib beradi*/
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+:focus,
+:active {
+  outline: none;
+}
+
+a:focus,
+a:active {
+  outline: none;
+}
+
+/*quyidagi teglarni blok qilib beradi*/
+nav,
+footer,
+header,
+aside {
+  display: block;
+}
+
+/*elementlarning hossalarini barcha brauzerlar uchun mo`tadillashtirib beradi*/
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  font-family: "Gilory";
+  -ms-text-size-adjusst: 100%;
+  -moz-text-size-adjusst: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+/*quyidagi teglarning shriftlar oilasini vorislashi taminlanadi*/
+input,
+button,
+textarea {
+  font-family: inherit;
+}
+
+/*turli brauzerlarning o`ziga xos hususiyatlarini olib tashlash*/
+input:-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button:-moz-focus-innesr {
+  padding: 0;
+  border: 0;
+}
+
+a,
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+/*sarlavharning odatdagi stillarini nullashtirish*/
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: 400;
+}
+
+/* "*" belgisi barcha elementlarga murojaatni anglatadi*/
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+/*bloklarning width ni o`zgarishini verstka uchun qulay qilib beradi*/
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+:focus,
+:active {
+  outline: none;
+}
+
+a:focus,
+a:active {
+  outline: none;
+}
+
+/*quyidagi teglarni blok qilib beradi*/
+nav,
+footer,
+header,
+aside {
+  display: block;
+}
+
+/*elementlarning hossalarini barcha brauzerlar uchun mo`tadillashtirib beradi*/
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  font-family: "Gilory";
+  -ms-text-size-adjusst: 100%;
+  -moz-text-size-adjusst: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+/*quyidagi teglarning shriftlar oilasini vorislashi taminlanadi*/
+input,
+button,
+textarea {
+  font-family: inherit;
+}
+
+/*turli brauzerlarning o`ziga xos hususiyatlarini olib tashlash*/
+input:-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button:-moz-focus-innesr {
+  padding: 0;
+  border: 0;
+}
+
+a,
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+/*sarlavharning odatdagi stillarini nullashtirish*/
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: 400;
+}
+
+.wrapper {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  place-items: center;
+  background-color: #fff;
+}
+
+.container {
+  width: 496px;
+  height: 100%;
+  margin: 0 auto;
+  border-radius: 28px;
+  box-shadow: 0 0 1px 0 rgba(0, 0, 0, 0.04), 0 2px 6px 0 rgba(0, 0, 0, 0.04), 0 16px 24px 0 rgba(0, 0, 0, 0.06);
+  background: linear-gradient(180deg);
+}
+
+.header {
+  padding-top: 40px;
+  display: flex;
+  align-items: center;
+}
+.header p {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 30px;
+  color: #007438;
+  margin: 0 auto;
+}
+.header img {
+  width: 22px;
+  margin-left: 30px;
+  cursor: pointer;
+}
+
+.payment__search {
+  margin: 20px 0px 0px 30px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  border: 2px solid #007438;
+  border-radius: 7px;
+  width: 400px;
+  padding: 6px;
+}
+.payment__search img {
+  width: 25px;
+  margin-left: 14px;
+}
+.payment__search input {
+  width: 300px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 22px;
+  letter-spacing: 0.02em;
+  color: #474747;
+}
+.payment__cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-column-gap: 10px;
+  padding: 10px;
+  padding-top: 60px;
+}
+.payment__card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  box-shadow: 0 0 1px 0 rgba(0, 0, 0, 0.04), 0 2px 6px 0 rgba(0, 0, 0, 0.04), 0 16px 24px 0 rgba(0, 0, 0, 0.06);
+  background: #fff;
+  border-radius: 22px;
+  cursor: pointer;
+  padding: 20px;
+  text-align: center;
+}
+.payment__form {
+  margin-top: 30px;
+  margin-left: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.payment__form label {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  letter-spacing: 0.02em;
+  color: #474747;
+}
+.payment__form select {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  border: 2px solid #007438;
+  border-radius: 7px;
+  width: 400px;
+  padding: 6px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  color: #4e4e4e;
+}
+
+.card__img {
+  width: 40px;
+  margin: 10px;
+}
+.card__info {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  color: #474747;
+  padding-top: 12px;
+}
+
+.calcLabel {
+  margin-top: 20px;
+}
+
+.calcInp {
+  border: 2px solid #007438;
+  border-radius: 7px;
+  width: 400px;
+  padding: 6px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  color: #4e4e4e;
+}
+
+.wrapper {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  place-items: center;
+  background-color: #fff;
+}
+
+.container {
+  width: 496px;
+  height: 100%;
+  margin: 0 auto;
+  border-radius: 28px;
+  box-shadow: 0 0 1px 0 rgba(0, 0, 0, 0.04), 0 2px 6px 0 rgba(0, 0, 0, 0.04), 0 16px 24px 0 rgba(0, 0, 0, 0.06);
+  background: linear-gradient(180deg);
+}
+
+.header {
+  padding-top: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.header p {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 30px;
+  color: #007438;
+  margin: 0px;
+}
+.header button {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  color: #007438;
+  padding: 5px 10px;
+  border-radius: 8px;
+  color: #70a6e8;
+  box-shadow: 0 0 1px 0 rgba(0, 0, 0, 0.04), 0 2px 6px 0 rgba(0, 0, 0, 0.04), 0 16px 24px 0 rgba(0, 0, 0, 0.06);
+  background: #e4f0ff;
+}
+
+.payment__cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-column-gap: 10px;
+  grid-row-gap: 20px;
+  padding: 10px;
+  padding-top: 60px;
+}
+.payment__card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  box-shadow: 0 0 1px 0 rgba(0, 0, 0, 0.04), 0 2px 6px 0 rgba(0, 0, 0, 0.04), 0 16px 24px 0 rgba(0, 0, 0, 0.06);
+  background: #fff;
+  padding: 22px;
+  border-radius: 22px;
+  cursor: pointer;
+}
+
+.card__img {
+  width: 30px;
+  margin: 20px;
+}
+.card__info {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  color: #474747;
+  padding-top: 15px;
+  text-align: center;
+}
+
+.img__container {
+  border: 3px solid #007438;
+  border-radius: 10px;
+}
