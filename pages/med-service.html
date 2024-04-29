@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="../css/home.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="container">
+            <div class="header">
+                <img class="back" data-url="../index.html" src="../img/back.png" alt="back icon">
+                <p>Здравоохранение</p>
+            </div>
+            <div class="payment__search">
+                <img src="../img/search.png" alt="search icon">
+                <input type="text" placeholder="поиск">
+            </div>
+            <div style="row-gap: 16px;" class="payment__cards">
+                <div class="payment__card" data-url=".index.html">
+                    <div class="img__container">
+                        <img class="card__img" src="../img/talk.png" alt="home">
+                    </div>
+                    <p class="card__info">Запись на прием (медицина)</p>
+                </div>
+                <div class="payment__card" data-url="../pages/gas.html">
+                    <div class="img__container">
+                        <img class="card__img" src="../img/doctor.png" alt="home">
+                    </div>
+                    <p class="card__info">Запись на прием к врачу</p>
+                </div>
+                <div class="payment__card" data-url="../pages/water.html">
+                    <div class="img__container">
+                        <img style="width: 56px;" class="card__img water" src="../img/med-pay.png" alt="home">
+                    </div>
+                    <p class="card__info">Оплата за медицинские услуги</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="../main.js"></script>
+</body>
+
+</html>
