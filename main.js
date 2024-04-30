@@ -14,3 +14,14 @@ backBtn.forEach(card => {
         window.location.href = url;
     });
 });
+
+// swiper
+
+var swiper = new Swiper('.swiper-container', {
+    speed: 700,
+    effect: 'fade',
+    loop: true,
+    autoplay: {
+        delay: 5000, // 5 seconds
+    },
+});
